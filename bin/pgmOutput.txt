@@ -1,0 +1,425 @@
+
+LastName	FirstName	SSN	AcctNum	AcctType	Balance	 Status	 Maturity date
+_______________________________________________________________________________
+|Tom       Sawyer  456778901  234567  CD         500.00   open    7/22/2022 |
+|John      Doe     123445678  123456  Savings    200.55   open    |
+|Jim       Beam    234556789  567890  Checkings  1234.56  open    |
+|Jane      Eyre    345667890  987654  Savings    2.33     open    |
+|Huck      Finn    567889012  345678  Checkings  123.98   open    |
+|John      Doe     123445678  222222  CD         5000.00  open    12/12/2022|
+|John      Doe     123445678  333333  Checkings  999.99   open    |
+|Huck      Finn    567889012  654321  Savings    543.66   open    |
+|Jack      Spratt  678990123  256788  Savings    333.33   open    |
+|Jane      Doe     456789012  389765  Checkings  888.56   open    |
+|Jane      Doe     456789012  123123  Savings    8765.43  open    |
+|Huck      Finn    567889012  243202  CD         4200.00  open    12/12/2025|
+|John      Doe     123445678  144546  Savings    0.00     open    |
+_______________________________________________________________________________
+Total amount in all accounts: $22792.39          |
+Total amount in Savings accounts: $9845.30       |
+Total amount in Checkings accounts: $3247.09     |
+Total amount in CD accounts: $9700.00            |
+_________________________________________________
+ 
+Transaction Requested: Balance inquiry
+Date of Transaction: Tue Jul 02 20:59:03 EDT 2024
+Name:John Doe
+Account number: 144546
+Account type: Savings
+Balance: $0.00
+ 
+Transaction Requested: Balance inquiry
+Date of Transaction: Tue Jul 02 20:59:03 EDT 2024
+Name: 
+Account number:245
+Error: Account number- 245 - not found
+
+Transaction Requested: Deposit
+Date of Transaction: Tue Jul 02 20:59:03 EDT 2024
+Name:Tom Sawyer
+Account number: 234567
+Account type: CD
+Old balance: $500.00
+Amount to Deposit: $40.00
+New balance: $540.00
+CD new Maturity date : 7/22/2024
+
+
+Transaction Requested: Deposit
+Date of Transaction: Tue Jul 02 20:59:03 EDT 2024
+Name:John Doe
+Account number:333333
+Error: -3.0 is an invalid amount
+
+
+Transaction Requested: Deposit
+Date of Transaction: Tue Jul 02 20:59:03 EDT 2024
+Account number: 144546
+Account type: Savings
+Old balance: $0.00
+Amount to Deposit: $100.00
+New balance: $100.00
+
+
+Transaction Requested: Deposit
+Date of Transaction: Tue Jul 02 20:59:04 EDT 2024
+Account number: 389765
+Account type: Checkings
+Old balance: $888.56
+Amount to Deposit: $200.00
+New balance: $1088.56
+
+
+Transaction Requested: Close Account
+Date of Transaction: Tue Jul 02 20:59:04 EDT 2024
+Name: Doe Jane
+Account number:389765 has been closed
+No type of transaction will be allowed on a close account
+
+Transaction Requested: withdrawal
+Date of Transaction: Tue Jul 02 20:59:04 EDT 2024
+Name:John Doe
+Account number: 222222
+Account type: CD
+Old balance: $5000.00
+Amount to Withdraw: $500.00
+New balance: $4500.00
+CD new Maturity date : 12/12/2024
+
+
+Transaction Requested: withdrawal
+Date of Transaction: Tue Jul 02 20:59:04 EDT 2024
+Name:Doe John
+Account number: 333333
+Account type: Checkings
+Old balance: $999.99
+Amount to Withdraw: $290.00
+New balance: $709.99
+
+
+Transaction Requested: withdrawal
+Date of Transaction: Tue Jul 02 20:59:04 EDT 2024
+Name:Jane Doe
+Account number:123123
+Balance: $8765.43
+Error: Insufficient Funds Available - Transaction amount - $100000.0 .
+
+ 
+Transaction Requested: Balance inquiry
+Date of Transaction: Tue Jul 02 20:59:04 EDT 2024
+Name:Doe Jane
+Account number: 123123
+Account type: Savings
+Balance: $8765.43
+
+Transaction Requested: withdrawal
+Date of Transaction: Tue Jul 02 20:59:04 EDT 2024
+Account number:243202
+Error: CD Account has not attained its maturity date
+CD Maturity Date:12/12/2025
+
+Transaction Requested: withdrawal
+Date of Transaction: Tue Jul 02 20:59:04 EDT 2024
+Name:Jane Doe
+Account number:389765
+Error: Account status is close
+
+
+Transaction Requested: Reopen Account
+Date of Transaction: Tue Jul 02 20:59:04 EDT 2024
+Name: Doe Jane
+Account number:389765 has been reopened
+Transactions will be allowed on this account
+
+
+Transaction Requested: withdrawal
+Date of Transaction: Tue Jul 02 20:59:04 EDT 2024
+Name:Jane Doe
+Account number: 389765
+Account type: Checkings
+Old balance: $1088.56
+Amount to Withdraw: $300.00
+New balance: $788.56
+
+
+Transaction Requested: withdrawal
+Date of Transaction: Tue Jul 02 20:59:04 EDT 2024
+Name:Huck Finn
+Account number: 345678
+Account type: Checkings
+Old balance: $123.98
+Amount to Withdraw: $81.48
+New balance: $42.50
+
+
+Transaction Requested: withdrawal
+Date of Transaction: Tue Jul 02 20:59:04 EDT 2024
+Name:Jane Doe
+Account number: 123123
+Account type: Savings
+Old balance: $8765.43
+Amount to Withdraw: $100.00
+New balance: $8665.43
+
+
+__________________________________________________________________
+Transaction Requested: Account Info With Transaction History      |
+SSN: 456789012                                                    |
+
+LastName	FirstName	SSN	AcctNum	AcctType	Balance	 Status	 Maturity date
+_______________________________________________________________________________
+Doe       Jane    456789012  389765  Checkings  788.56   Open     
+
+***** Account Transactions *****
+Date 		Transaction		Amount		Status	Balance		Reason for failure
+07/02/2024  Deposit             200.00   Done	1088.56	                                                                                                                                                                                                    07/02/2024  Close Account       0.00     Done	1088.56	                                                                                                                                                                                                    07/02/2024  withdrawal          300.00   Failed	1088.56	Error: Account status is close                                                                                                                                                                    07/02/2024  Reopen Account      0.00     Done	1088.56	                                                                                                                                                                                                    07/02/2024  withdrawal          300.00   Done	788.56	                                                                                                                                                                                                     07/02/2024  Clear Check         200.00   Failed	788.56	Error:Check not cleared - Post-dated check: 6/3/2025                                                                                                                                               
+07/02/2024  Close Account       0.00     Done	1088.56	                                                                                                                                                                                                    07/02/2024  withdrawal          300.00   Failed	1088.56	Error: Account status is close                                                                                                                                                                    07/02/2024  Reopen Account      0.00     Done	1088.56	                                                                                                                                                                                                    07/02/2024  withdrawal          300.00   Done	788.56	                                                                                                                                                                                                     07/02/2024  Clear Check         200.00   Failed	788.56	Error:Check not cleared - Post-dated check: 6/3/2025                                                                                                                                               
+07/02/2024  withdrawal          300.00   Failed	1088.56	Error: Account status is close                                                                                                                                                                    07/02/2024  Reopen Account      0.00     Done	1088.56	                                                                                                                                                                                                    07/02/2024  withdrawal          300.00   Done	788.56	                                                                                                                                                                                                     07/02/2024  Clear Check         200.00   Failed	788.56	Error:Check not cleared - Post-dated check: 6/3/2025                                                                                                                                               
+07/02/2024  Reopen Account      0.00     Done	1088.56	                                                                                                                                                                                                    07/02/2024  withdrawal          300.00   Done	788.56	                                                                                                                                                                                                     07/02/2024  Clear Check         200.00   Failed	788.56	Error:Check not cleared - Post-dated check: 6/3/2025                                                                                                                                               
+07/02/2024  withdrawal          300.00   Done	788.56	                                                                                                                                                                                                     07/02/2024  Clear Check         200.00   Failed	788.56	Error:Check not cleared - Post-dated check: 6/3/2025                                                                                                                                               
+_______________________________________________________________________________
+ 
+
+LastName	FirstName	SSN	AcctNum	AcctType	Balance	 Status	 Maturity date
+_______________________________________________________________________________
+Doe       Jane    456789012  123123  Savings    8665.43  open     
+
+***** Account Transactions *****
+Date 		Transaction		Amount		Status	Balance		Reason for failure
+07/02/2024  withdrawal          100000.00 Failed	8765.43	Balance: $8765.43
+07/02/2024  Balance inquiry     0.00     Done	8765.43	                                                                                                                                                                                                    07/02/2024  withdrawal          100.00   Done	8665.43	                                                                                                                                                                                                    
+07/02/2024  withdrawal          100.00   Done	8665.43	                                                                                                                                                                                                    
+_______________________________________________________________________________
+ 
+2 accounts with this social security found
+
+Transaction Requested: Open New Account
+Date of Transaction: Tue Jul 02 20:59:04 EDT 2024
+Name: Scotch Darrell
+New Account number: 464657
+Account type: CD
+Opening balance: $700.00
+CD New Maturity Date: 9/6/2023
+ 
+
+Transaction Requested: Open New Account
+Date of Transaction: Tue Jul 02 20:59:04 EDT 2024
+Name: milly Johan
+New Account number: 645562
+Account type: Checkings
+Opening balance: $300.00
+ 
+
+Transaction Requested: Open New Account
+Date of Transaction: Tue Jul 02 20:59:04 EDT 2024
+Name: Scotch Darrell
+New Account number: 444444
+Account type: Savings
+Opening balance: $400.00
+ 
+
+Transaction Requested: Clear check
+Date of Transaction: Tue Jul 02 20:59:04 EDT 2024
+Name:Finn Huck
+Account number: 345678
+Account type: Checkings
+Old balance: $42.50
+Amount to Withdraw: $40.00
+New balance: $2.50
+
+
+Transaction Requested: Clear check
+Date of Transaction: Tue Jul 02 20:59:04 EDT 2024
+Account number: 567890
+Account type: Checkings
+Old balance: $1234.56
+Amount to Withdraw: $40.00
+New balance: $1234.56
+Error: Checks older than 6 months will not be cleared: 2/3/2021
+
+
+Transaction Requested: Close Account
+Date of Transaction: Tue Jul 02 20:59:04 EDT 2024
+Name: John Doe
+Account number:333333 has been closed
+No type of transaction will be allowed on a close account
+
+Transaction Requested: Clear check
+Date of Transaction: Tue Jul 02 20:59:04 EDT 2024
+Account number: 333333
+Account type: Checkings
+Old balance: $0.00
+Amount to Withdraw: $60.00
+New balance: $0.00
+Error: Account status is close
+
+
+Transaction Requested: Clear check
+Date of Transaction: Tue Jul 02 20:59:04 EDT 2024
+Account number: 345678
+Account type: Checkings
+Old balance: $42.50
+Amount to Withdraw: $200.00
+New balance: $40.00
+Error: Insufficient Funds Available - Bounce Fee ($2.50) Charged
+
+
+Transaction Requested: Clear check
+Date of Transaction: Tue Jul 02 20:59:04 EDT 2024
+Account number: 389765
+Account type: Checkings
+Old balance: $788.56
+Amount to Withdraw: $200.00
+New balance: $788.56
+Error:Check not cleared - Post-dated check: 6/3/2025
+
+
+Transaction Requested: Clear check
+Date of Transaction: Tue Jul 02 20:59:04 EDT 2024
+Account number: 256788
+Account type: Savings
+Old balance: $0.00
+Amount to Withdraw: $200.00
+New balance: $0.00
+Error: Account is not a Checkings account 
+
+
+Transaction Requested: Close Account
+Date of Transaction: Tue Jul 02 20:59:04 EDT 2024
+Name: John Doe
+Account number:144546 has been closed
+No type of transaction will be allowed on a close account
+
+Transaction Requested: Account info
+SSN: 202020201
+LastName	FirstName	SSN	AcctNum	AcctType	Balance	 Status	 Maturity date
+_______________________________________________________________________________
+|Darrell   Scotch  202020201  464657  CD         700.00   Open    9/6/2023  |
+|Darrell   Scotch  202020201  444444  Savings    400.00   Open    |
+_______________________________________________________________________________
+2 accounts with this social security found
+
+Transaction Requested: Account info
+SSN: 456789012
+LastName	FirstName	SSN	AcctNum	AcctType	Balance	 Status	 Maturity date
+_______________________________________________________________________________
+|Doe       Jane    456789012  389765  Checkings  788.56   Open    |
+|Doe       Jane    456789012  123123  Savings    8665.43  open    |
+_______________________________________________________________________________
+2 accounts with this social security found
+
+__________________________________________________________________
+Transaction Requested: Account Info With Transaction History      |
+SSN: 456789012                                                    |
+
+LastName	FirstName	SSN	AcctNum	AcctType	Balance	 Status	 Maturity date
+_______________________________________________________________________________
+Doe       Jane    456789012  389765  Checkings  788.56   Open     
+
+***** Account Transactions *****
+Date 		Transaction		Amount		Status	Balance		Reason for failure
+07/02/2024  Deposit             200.00   Done	1088.56	                                                                                                                                                                                                    07/02/2024  Close Account       0.00     Done	1088.56	                                                                                                                                                                                                    07/02/2024  withdrawal          300.00   Failed	1088.56	Error: Account status is close                                                                                                                                                                    07/02/2024  Reopen Account      0.00     Done	1088.56	                                                                                                                                                                                                    07/02/2024  withdrawal          300.00   Done	788.56	                                                                                                                                                                                                     07/02/2024  Clear Check         200.00   Failed	788.56	Error:Check not cleared - Post-dated check: 6/3/2025                                                                                                                                               
+07/02/2024  Close Account       0.00     Done	1088.56	                                                                                                                                                                                                    07/02/2024  withdrawal          300.00   Failed	1088.56	Error: Account status is close                                                                                                                                                                    07/02/2024  Reopen Account      0.00     Done	1088.56	                                                                                                                                                                                                    07/02/2024  withdrawal          300.00   Done	788.56	                                                                                                                                                                                                     07/02/2024  Clear Check         200.00   Failed	788.56	Error:Check not cleared - Post-dated check: 6/3/2025                                                                                                                                               
+07/02/2024  withdrawal          300.00   Failed	1088.56	Error: Account status is close                                                                                                                                                                    07/02/2024  Reopen Account      0.00     Done	1088.56	                                                                                                                                                                                                    07/02/2024  withdrawal          300.00   Done	788.56	                                                                                                                                                                                                     07/02/2024  Clear Check         200.00   Failed	788.56	Error:Check not cleared - Post-dated check: 6/3/2025                                                                                                                                               
+07/02/2024  Reopen Account      0.00     Done	1088.56	                                                                                                                                                                                                    07/02/2024  withdrawal          300.00   Done	788.56	                                                                                                                                                                                                     07/02/2024  Clear Check         200.00   Failed	788.56	Error:Check not cleared - Post-dated check: 6/3/2025                                                                                                                                               
+07/02/2024  withdrawal          300.00   Done	788.56	                                                                                                                                                                                                     07/02/2024  Clear Check         200.00   Failed	788.56	Error:Check not cleared - Post-dated check: 6/3/2025                                                                                                                                               
+_______________________________________________________________________________
+ 
+
+LastName	FirstName	SSN	AcctNum	AcctType	Balance	 Status	 Maturity date
+_______________________________________________________________________________
+Doe       Jane    456789012  123123  Savings    8665.43  open     
+
+***** Account Transactions *****
+Date 		Transaction		Amount		Status	Balance		Reason for failure
+07/02/2024  withdrawal          100000.00 Failed	8765.43	Balance: $8765.43
+07/02/2024  Balance inquiry     0.00     Done	8765.43	                                                                                                                                                                                                    07/02/2024  withdrawal          100.00   Done	8665.43	                                                                                                                                                                                                    
+07/02/2024  withdrawal          100.00   Done	8665.43	                                                                                                                                                                                                    
+_______________________________________________________________________________
+ 
+2 accounts with this social security found
+
+__________________________________________________________________
+Transaction Requested: Account Info With Transaction History      |
+SSN: 55656                                                    |
+LastName	FirstName	SSN		AcctNum	AcctType	Balance	Maturity Date
+null		null		null		null	null	null
+No account with this Social Security exists
+
+__________________________________________________________________
+Transaction Requested: Account Info With Transaction History      |
+SSN: 202020201                                                    |
+
+LastName	FirstName	SSN	AcctNum	AcctType	Balance	 Status	 Maturity date
+_______________________________________________________________________________
+Darrell   Scotch  202020201  464657  CD         700.00   Open    9/6/2023   
+
+***** Account Transactions *****
+Date 		Transaction		Amount		Status	Balance		Reason for failure
+_______________________________________________________________________________
+ 
+
+LastName	FirstName	SSN	AcctNum	AcctType	Balance	 Status	 Maturity date
+_______________________________________________________________________________
+Darrell   Scotch  202020201  444444  Savings    400.00   Open     
+
+***** Account Transactions *****
+Date 		Transaction		Amount		Status	Balance		Reason for failure
+_______________________________________________________________________________
+ 
+2 accounts with this social security found
+
+
+Transaction Requested: Delete Account
+Name:Jane Eyre
+Account number:987654
+Error: Unable to delete account due to present balances
+Account balance: 2.33 
+
+
+Transaction Requested: withdrawal
+Date of Transaction: Tue Jul 02 20:59:05 EDT 2024
+Name:Jane Eyre
+Account number: 987654
+Account type: Savings
+Old balance: $2.33
+Amount to Withdraw: $2.33
+New balance: $0.00
+
+
+
+Transaction Requested: Delete Account
+Success: Account number 987654 has been deleted
+
+
+
+Transaction Requested: Delete Account
+Name:Finn Huck
+Account number:345678
+Error: Unable to delete account due to present balances
+Account balance: 42.5 
+
+
+LastName	FirstName	SSN	AcctNum	AcctType	Balance	 Status	 Maturity date
+_______________________________________________________________________________
+|Sawyer    Tom     456778901  234567  CD         540.00   open    7/22/2024 |
+|John      Doe     123445678  123456  Savings    200.55   open    |
+|Jim       Beam    234556789  567890  Checkings  1234.56  open    |
+|Scotch    Darrell 202020201  444444  Savings    400.00   Open    |
+|Finn      Huck    567889012  345678  Checkings  42.50    open    |
+|Doe       John    123445678  222222  CD         4500.00  open    12/12/2024|
+|Doe       John    123445678  333333  Checkings  709.99   close   |
+|Huck      Finn    567889012  654321  Savings    543.66   open    |
+|Jack      Spratt  678990123  256788  Savings    333.33   open    |
+|Doe       Jane    456789012  389765  Checkings  788.56   Open    |
+|Doe       Jane    456789012  123123  Savings    8665.43  open    |
+|Finn      Huck    567889012  243202  CD         4200.00  open    12/12/2025|
+|Doe       John    123445678  144546  Savings    100.00   close   |
+|Darrell   Scotch  202020201  464657  CD         700.00   Open    9/6/2023  |
+|Johan     milly   445920671  645562  Checkings  300.00   Open    |
+_______________________________________________________________________________
+Total amount in all accounts: $23218.58          |
+Total amount in Savings accounts: $10242.97       |
+Total amount in Checkings accounts: $3035.61     |
+Total amount in CD accounts: $9940.00            |
+_________________________________________________
